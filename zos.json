@@ -1,0 +1,9 @@
+{
+  "zosversion": "2",
+  "name": "livepeer-eth",
+  "version": "1.0.0",
+  "contracts": {
+    "MerkleMine": "MerkleMine",
+    "SortedDoublyLLFixture": "SortedDoublyLLFixture"
+  }
+}

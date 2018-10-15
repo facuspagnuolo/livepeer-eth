@@ -1,5 +1,6 @@
 pragma solidity ^0.4.17;
 
+import "zos-lib/contracts/Initializable.sol";
 import "zeppelin-solidity/contracts/MerkleProof.sol";
 import "zeppelin-solidity/contracts/token/ERC20.sol";
 import "zeppelin-solidity/contracts/math/SafeMath.sol";
@@ -9,7 +10,7 @@ import "zeppelin-solidity/contracts/math/SafeMath.sol";
  * @title MerkleMine
  * @dev Token distribution based on providing Merkle proofs of inclusion in genesis state to generate allocation
  */
-contract MerkleMine {
+contract MerkleMine is Initializable {
     using SafeMath for uint256;
 
     // ERC20 token being distributed
@@ -71,7 +72,7 @@ contract MerkleMine {
      * @param _callerAllocationStartBlock Start block where a third party caller (not the recipient) can generate and split the allocation with the recipient
      * @param _callerAllocationEndBlock From this block onwards, a third party caller (not the recipient) can generate and claim the recipient's full allocation
      */
-    function MerkleMine(
+    function initialize(
         address _token,
         bytes32 _genesisRoot,
         uint256 _totalGenesisTokens,
@@ -81,7 +82,7 @@ contract MerkleMine {
         uint256 _callerAllocationStartBlock,
         uint256 _callerAllocationEndBlock
     )
-        public
+        public initializer
     {
         // Address of token contract must not be null
         require(_token != address(0));
