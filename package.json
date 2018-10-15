@@ -57,6 +57,8 @@
     "solium": "^1.1.8",
     "truffle": "^4.0.4",
     "truffle-keystore-provider": "^1.0.2",
-    "zeppelin-solidity": "1.5.0"
+    "zeppelin-solidity": "1.5.0",
+    "zos": "^2.0.0-alpha.9",
+    "zos-lib": "^2.0.0-alpha.9"
   }
 }
