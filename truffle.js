@@ -9,7 +9,7 @@ let mochaConfig = {}
 // Enable Mocha's --grep feature
 for (let i = 0; i < process.argv.length; i++) {
     const arg = process.argv[i]
-    if (arg !== "-g" &&  arg !== "--grep") continue
+    if (arg !== "-g" && arg !== "--grep") continue
     if (++i >= process.argv.length) {
         console.error(arg + " option requires argument")
         process.exit(1)
@@ -49,6 +49,27 @@ module.exports = {
             network_id: "*", // Match any network id
             gas: 6700000
         },
+        local: {
+            host: "localhost",
+            port: 8545,
+            network_id: "*",
+            gas: 5000000,
+            gasPrice: 2e9 // 2 Gwei
+        },
+        ropsten: {
+            host: "localhost",
+            port: 8565,
+            network_id: 3,
+            gas: 500000,
+            gasPrice: 10e9 // 10 Gwei
+        },
+        kovan: {
+            host: 'localhost',
+            port: 8555,
+            network_id: 42,
+            gas: 500000,
+            gasPrice: 10e9, // 10 Gwei
+        },
         coverage: {
             host: "localhost",
             network_id: "*",
@@ -76,11 +97,11 @@ module.exports = {
             gas: 6600000
         },
         rinkeby: {
-            provider: () => {
-                return createProvider(process.env.RINKEBY_ACCOUNT, process.env.DATA_DIR, "https://rinkeby.infura.io", process.env.READ_ONLY)
-            },
+            host: "localhost",
+            port: 8565,
             network_id: 4,
-            gas: 6600000
+            gas: 500000,
+            gasPrice: 10e9 // 10 Gwei
         },
         rinkebyDryRun: {
             provider: () => {
