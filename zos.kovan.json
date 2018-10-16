@@ -1,0 +1,298 @@
+{
+  "contracts": {
+    "MerkleMine": {
+      "address": "0x2823f3dc7200b335be7a42cf22ee089320caea36",
+      "constructorCode": "608060405234801561001057600080fd5b50610ae8806100206000396000f300",
+      "bodyBytecodeHash": "689f4fab854011c6e8b9832fc0b26899572f33ae8bc07c44b02731d9ecf5997e",
+      "localBytecodeHash": "364500d202ed648b0d80af73b678cd735d108055777a9be888421ba9e7edf994",
+      "deployedBytecodeHash": "cd03a2f0f0242558b7020f5551ec85cf5d8761ce3c2b45ffe05c7546d822ec9a",
+      "types": {
+        "t_bool": {
+          "id": "t_bool",
+          "kind": "elementary",
+          "label": "bool"
+        },
+        "t_array:50<t_uint256>": {
+          "id": "t_array:50<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "50",
+          "kind": "array",
+          "label": "uint256[50]"
+        },
+        "t_address": {
+          "id": "t_address",
+          "kind": "elementary",
+          "label": "address"
+        },
+        "t_bytes32": {
+          "id": "t_bytes32",
+          "kind": "elementary",
+          "label": "bytes32"
+        },
+        "t_uint256": {
+          "id": "t_uint256",
+          "kind": "elementary",
+          "label": "uint256"
+        },
+        "t_mapping<t_bool>": {
+          "id": "t_mapping<t_bool>",
+          "valueType": "t_bool",
+          "label": "mapping(key => bool)",
+          "kind": "mapping"
+        }
+      },
+      "storage": [
+        {
+          "contract": "Initializable",
+          "path": "zos-lib/contracts/Initializable.sol",
+          "label": "initialized",
+          "astId": 15119,
+          "type": "t_bool",
+          "src": "749:24:56"
+        },
+        {
+          "contract": "Initializable",
+          "path": "zos-lib/contracts/Initializable.sol",
+          "label": "initializing",
+          "astId": 15121,
+          "type": "t_bool",
+          "src": "868:25:56"
+        },
+        {
+          "contract": "Initializable",
+          "path": "zos-lib/contracts/Initializable.sol",
+          "label": "______gap",
+          "astId": 15170,
+          "type": "t_array:50<t_uint256>",
+          "src": "1883:29:56"
+        },
+        {
+          "contract": "MerkleMine",
+          "path": "contracts/token/MerkleMine.sol",
+          "label": "token",
+          "astId": 12425,
+          "type": "t_address",
+          "src": "493:18:35"
+        },
+        {
+          "contract": "MerkleMine",
+          "path": "contracts/token/MerkleMine.sol",
+          "label": "genesisRoot",
+          "astId": 12427,
+          "type": "t_bytes32",
+          "src": "594:26:35"
+        },
+        {
+          "contract": "MerkleMine",
+          "path": "contracts/token/MerkleMine.sol",
+          "label": "totalGenesisTokens",
+          "astId": 12429,
+          "type": "t_uint256",
+          "src": "678:33:35"
+        },
+        {
+          "contract": "MerkleMine",
+          "path": "contracts/token/MerkleMine.sol",
+          "label": "totalGenesisRecipients",
+          "astId": 12431,
+          "type": "t_uint256",
+          "src": "777:37:35"
+        },
+        {
+          "contract": "MerkleMine",
+          "path": "contracts/token/MerkleMine.sol",
+          "label": "tokensPerAllocation",
+          "astId": 12433,
+          "type": "t_uint256",
+          "src": "927:34:35"
+        },
+        {
+          "contract": "MerkleMine",
+          "path": "contracts/token/MerkleMine.sol",
+          "label": "balanceThreshold",
+          "astId": 12435,
+          "type": "t_uint256",
+          "src": "1045:31:35"
+        },
+        {
+          "contract": "MerkleMine",
+          "path": "contracts/token/MerkleMine.sol",
+          "label": "genesisBlock",
+          "astId": 12437,
+          "type": "t_uint256",
+          "src": "1186:27:35"
+        },
+        {
+          "contract": "MerkleMine",
+          "path": "contracts/token/MerkleMine.sol",
+          "label": "callerAllocationStartBlock",
+          "astId": 12439,
+          "type": "t_uint256",
+          "src": "1471:41:35"
+        },
+        {
+          "contract": "MerkleMine",
+          "path": "contracts/token/MerkleMine.sol",
+          "label": "callerAllocationEndBlock",
+          "astId": 12441,
+          "type": "t_uint256",
+          "src": "1646:39:35"
+        },
+        {
+          "contract": "MerkleMine",
+          "path": "contracts/token/MerkleMine.sol",
+          "label": "callerAllocationPeriod",
+          "astId": 12443,
+          "type": "t_uint256",
+          "src": "1819:37:35"
+        },
+        {
+          "contract": "MerkleMine",
+          "path": "contracts/token/MerkleMine.sol",
+          "label": "started",
+          "astId": 12445,
+          "type": "t_bool",
+          "src": "1913:19:35"
+        },
+        {
+          "contract": "MerkleMine",
+          "path": "contracts/token/MerkleMine.sol",
+          "label": "generated",
+          "astId": 12449,
+          "type": "t_mapping<t_bool>",
+          "src": "2001:42:35"
+        }
+      ],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": false,
+        "uninitializedBaseContracts": []
+      }
+    },
+    "SortedDoublyLLFixture": {
+      "address": "0xa261252f7c6376beb3477f1833b752fc82ce0142",
+      "constructorCode": "608060405234801561001057600080fd5b50610822806100206000396000f300",
+      "bodyBytecodeHash": "643709c23dd716c36e35aa2c12f20390a3af08d67aab98ef43d84a5d04fa66b9",
+      "localBytecodeHash": "f2f5a5e91fc77c98605e5e5e622f7eb98f5df7dd51528176db6255900c2e8265",
+      "deployedBytecodeHash": "7c1b4131460614dd92bb08a77348d496391d68db08ae8ddb8ec751db9d6711c0",
+      "types": {
+        "t_struct<SortedDoublyLL.Data>": {
+          "id": "t_struct<SortedDoublyLL.Data>",
+          "kind": "struct",
+          "label": "SortedDoublyLL.Data",
+          "members": [
+            {
+              "label": "head",
+              "astId": 6616,
+              "type": "t_address",
+              "src": "1679:12:16"
+            },
+            {
+              "label": "tail",
+              "astId": 6618,
+              "type": "t_address",
+              "src": "1792:12:16"
+            },
+            {
+              "label": "maxSize",
+              "astId": 6620,
+              "type": "t_uint256",
+              "src": "1906:15:16"
+            },
+            {
+              "label": "size",
+              "astId": 6622,
+              "type": "t_uint256",
+              "src": "1979:12:16"
+            },
+            {
+              "label": "nodes",
+              "astId": 6626,
+              "type": "t_mapping<t_struct<SortedDoublyLL.Node>>",
+              "src": "2052:31:16"
+            }
+          ]
+        },
+        "t_address": {
+          "id": "t_address",
+          "kind": "elementary",
+          "label": "address"
+        },
+        "t_uint256": {
+          "id": "t_uint256",
+          "kind": "elementary",
+          "label": "uint256"
+        },
+        "t_struct<SortedDoublyLL.Node>": {
+          "id": "t_struct<SortedDoublyLL.Node>",
+          "kind": "struct",
+          "label": "SortedDoublyLL.Node",
+          "members": [
+            {
+              "label": "key",
+              "astId": 6609,
+              "type": "t_uint256",
+              "src": "1375:11:16"
+            },
+            {
+              "label": "nextId",
+              "astId": 6611,
+              "type": "t_address",
+              "src": "1447:14:16"
+            },
+            {
+              "label": "prevId",
+              "astId": 6613,
+              "type": "t_address",
+              "src": "1533:14:16"
+            }
+          ]
+        },
+        "t_mapping<t_struct<SortedDoublyLL.Node>>": {
+          "id": "t_mapping<t_struct<SortedDoublyLL.Node>>",
+          "valueType": "t_struct<SortedDoublyLL.Node>",
+          "label": "mapping(key => SortedDoublyLL.Node)",
+          "kind": "mapping"
+        }
+      },
+      "storage": [
+        {
+          "contract": "SortedDoublyLLFixture",
+          "path": "contracts/test/SortedDoublyLLFixture.sol",
+          "label": "list",
+          "astId": 11943,
+          "type": "t_struct<SortedDoublyLL.Data>",
+          "src": "158:24:28"
+        }
+      ],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": false,
+        "uninitializedBaseContracts": []
+      }
+    }
+  },
+  "solidityLibs": {
+    "MerkleProof": {
+      "address": "0xe70841461e61b9a4622bd25f17982edcd56c818e",
+      "constructorCode": "610181610030600b82828239805160001a6073146000811461002057610022565bfe5b5030600052607381538281f300",
+      "bodyBytecodeHash": "5ad6e5c027d354b003a8bdd0e7ded55aded3cb7e6071b23b2d3fa582de237370",
+      "localBytecodeHash": "a586c35c504137a2246e5b2d1c0032e848db7794e76ef0a5b7edeaccec8530fe",
+      "deployedBytecodeHash": "a586c35c504137a2246e5b2d1c0032e848db7794e76ef0a5b7edeaccec8530fe"
+    },
+    "SortedDoublyLL": {
+      "address": "0x8f496dc0c50f85cd66f3fd7b70756e284ecb7de7",
+      "constructorCode": "610c50610030600b82828239805160001a6073146000811461002057610022565bfe5b5030600052607381538281f300",
+      "bodyBytecodeHash": "9c8a793be0f6c6824da974e563f863245f559a43e46cd036524341b88931ceb3",
+      "localBytecodeHash": "f0a74d74af36bd3869a880f503ebc99410e6ed0e8e9406a27731d0fa2278403f",
+      "deployedBytecodeHash": "f0a74d74af36bd3869a880f503ebc99410e6ed0e8e9406a27731d0fa2278403f"
+    }
+  },
+  "proxies": {},
+  "zosversion": "2",
+  "version": "1.0.0"
+}
